@@ -4,7 +4,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/Interactive-Card/",
+  base: mode === "production" ? "/Interactive-Card/" : "/",
 
   server: {
     host: "::",
