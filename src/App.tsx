@@ -7,7 +7,7 @@ import NotFound from "./pages/NotFound";
 const App = () => (
   <TooltipProvider>
     <Toaster />
-    <BrowserRouter>
+    <BrowserRouter basename="/Interactive-Card">
       <Routes>
         <Route path="/" element={<Index />} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
