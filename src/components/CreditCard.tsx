@@ -40,7 +40,11 @@ export const CreditCard = ({
         <div className="absolute inset-0 w-full h-full backface-hidden">
           <div
             className="relative w-full h-full rounded-lg p-6 text-white overflow-hidden bg-cover bg-center"
-            style={{ backgroundImage: "url('/images/bg-card-front.png')" }}
+            style={{
+              backgroundImage: `url('${
+                import.meta.env.BASE_URL
+              }images/bg-card-front.png')`,
+            }}
           >
             {/* Decorative circles */}
             <div className="absolute top-4 left-6">
@@ -77,7 +81,11 @@ export const CreditCard = ({
         <div className="absolute inset-0 w-full h-full backface-hidden rotate-y-180">
           <div
             className="relative w-full h-full rounded-lg overflow-hidden bg-cover bg-center"
-            style={{ backgroundImage: "url('/images/bg-card-back.png')" }}
+            style={{
+              backgroundImage: `url('${
+                import.meta.env.BASE_URL
+              }images/bg-card-back.png')`,
+            }}
           >
             {/* CVC area */}
             <div className="absolute top-[5.5rem] right-8">

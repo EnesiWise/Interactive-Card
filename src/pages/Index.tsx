@@ -34,7 +34,11 @@ const Index = () => {
         <div className="hidden lg:flex w-full h-full">
           <div
             className="w-1/3 h-full bg-cover bg-center"
-            style={{ backgroundImage: "url('/images/bg-main-desktop.png')" }}
+            style={{
+              backgroundImage: `url('${
+                import.meta.env.BASE_URL
+              }images/bg-main-desktop.png')`,
+            }}
           ></div>
           <div className="w-2/3 h-full bg-background"></div>
         </div>
@@ -42,7 +46,11 @@ const Index = () => {
         {/* Mobile background */}
         <div
           className="lg:hidden w-full h-64 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/bg-main-mobile.png')" }}
+          style={{
+            backgroundImage: `url('${
+              import.meta.env.BASE_URL
+            }images/bg-main-mobile.png')`,
+          }}
         ></div>
         <div
           className="lg:hidden w-full bg-background"

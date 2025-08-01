@@ -256,7 +256,7 @@ export const CardForm: React.FC<CardFormProps> = ({
       <div className="w-full max-w-md mx-auto text-center">
         <div className="flex flex-col items-center space-y-6">
           <img
-            src="/images/icon-complete.svg"
+            src={`${import.meta.env.BASE_URL}images/icon-complete.svg`}
             alt="Complete"
             className="w-20 h-20"
           />
