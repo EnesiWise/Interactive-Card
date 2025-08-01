@@ -1,11 +1,16 @@
 # 💳 Interactive Card Details Form
 
-A responsive React app where users can fill in their card details and see them update in real time on a virtual credit card.
+A responsive React app where users can fill in their card details and see them update in real time on a virtual
+credit card.
+
+---
 
 ## 📋 Overview
 
 This is an interactive card details form built with React + TypeScript and styled with Tailwind CSS.  
 The app handles real-time validation, dynamic card updates, and adapts beautifully across desktop and mobile screens.
+
+---
 
 ### ✅ The challenge
 
@@ -19,15 +24,27 @@ Users should be able to:
 - See hover, active, and focus states for interactive elements on the page
 - See a custom 404 page for unknown routes
 
-### 📸 Screenshot
+---
 
-![Screenshot of the app](./screenshot.jpg)
+## 🖼️SCREENSHOTS
 
-> 📝 **Replace** `screenshot.jpg` with your actual screenshot file.
+### 💻 Desktop View
 
-### 🔗 Links
+![Card Front](./Screenshots/Desktop-View-1.png)
 
-- **Live Site:** [https://enesiwise.github.io/Interactive-Card/](https://enesiwise.github.io/Interactive-Card/)
+![Card Back](./Screenshots/Desktop-View-2.png)
+
+### 📱 Mobile View
+
+![Card Back](./Screenshots/Mobile-View-1.JPG)
+
+![Success](./Screenshots/Mobile-View-2.JPG)
+
+---
+
+## 🚀 Live Demo
+
+Click to view the live Site👉🏼 [![View Live](https://img.shields.io/badge/Interactive_Card_Details_Form-pink?style=for-the-badge&logo=rocket)] (https://enesiwise.github.io/Interactive-Card/)
 
 ---
 
