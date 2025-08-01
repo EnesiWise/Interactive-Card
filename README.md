@@ -1,22 +1,13 @@
-# Frontend Mentor - Interactive card details form solution
+# 💳 Interactive Card Details Form
 
-This is a solution to the [Interactive card details form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+A responsive React app where users can fill in their card details and see them update in real time on a virtual credit card.
 
-## Table of contents
+## 📋 Overview
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-- [Author](#author)
+This is an interactive card details form built with React + TypeScript and styled with Tailwind CSS.  
+The app handles real-time validation, dynamic card updates, and adapts beautifully across desktop and mobile screens.
 
-## Overview
-
-### The challenge
+### ✅ The challenge
 
 Users should be able to:
 
@@ -26,59 +17,64 @@ Users should be able to:
   - The card number, expiry date, or CVC fields are in the wrong format
 - View the optimal layout depending on their device's screen size
 - See hover, active, and focus states for interactive elements on the page
+- See a custom 404 page for unknown routes
 
-### Screenshot
+### 📸 Screenshot
 
-![Interactive card details form solution](./public/design/desktop-design.jpg)
+![Screenshot of the app](./screenshot.jpg)
 
-### Links
+> 📝 **Replace** `screenshot.jpg` with your actual screenshot file.
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+### 🔗 Links
 
-## My process
+- **Live Site:** [https://enesiwise.github.io/Interactive-Card/](https://enesiwise.github.io/Interactive-Card/)
 
-### Built with
+---
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [TypeScript](https://www.typescriptlang.org/) - For type safety
-- [Tailwind CSS](https://tailwindcss.com/) - For styles
-- [React Hook Form](https://react-hook-form.com/) - For form handling
-- [Zod](https://zod.dev/) - For form validation
-- [Vite](https://vitejs.dev/) - Build tool
+## 🛠 My process
 
-### What I learned
+- Designed and coded responsive components (CreditCard, CardForm, etc.)
+- Used React state hooks to handle form data and validation
+- Integrated custom validation and real-time feedback
+- Configured Vite + React + TypeScript + Tailwind CSS
+- Deployed to GitHub Pages, handled base path and fallback routing
 
-This project helped me practice form validation and real-time updates between form inputs and visual elements. I learned how to:
+---
 
-- Implement real-time form validation with proper error handling
-- Format credit card inputs (number spacing, expiry date formatting)
-- Create responsive layouts that work well on both mobile and desktop
-- Use React Hook Form with Zod for robust form validation
-- Handle complex state management for real-time card preview updates
+### ⚙️ Built with
 
-```tsx
-// Example of real-time card number formatting
-const formatCardNumber = (value: string) => {
-  const cleaned = value.replace(/\s/g, "");
-  const formatted = cleaned.replace(/(.{4})/g, "$1 ");
-  return formatted.trim();
-};
-```
+- [React](https://reactjs.org/) & [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React Router DOM](https://reactrouter.com/)
+- [Radix UI](https://www.radix-ui.com/) for accessible UI components
+- [gh-pages](https://www.npmjs.com/package/gh-pages) for deployment
 
-### Continued development
+---
 
-In future projects, I want to continue focusing on:
+### 📚 What I learned
 
-- Advanced form validation patterns
-- Animation and micro-interactions
-- Accessibility improvements for form elements
-- Testing strategies for form components
+- Configuring React Router to work with GitHub Pages (using `basename`)
+- Adding a `404.html` fallback to support client-side routing
+- Dynamically loading images from the `public` folder to work both locally and in production
+- Using Tailwind CSS to create responsive, mobile-first designs quickly
 
-## Author
+---
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+### 🚀 Continued development
+
+- Improve accessibility with ARIA labels
+- Add real-time formatting and masking of card inputs
+- Write unit and integration tests for components
+- Animate card flipping and transitions for better UX
+
+---
+
+## 👤 Author
+
+- Name: **Enesi Wise**
+- GitHub: [@enesiwise](https://github.com/enesiwise)
+
+---
+
+> ⚡ _Built with ❤️ and React!_
