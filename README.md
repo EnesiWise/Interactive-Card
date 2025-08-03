@@ -29,7 +29,7 @@ Users should be able to:
 ## 🚀 Live Demo
 
 Click to view the live site 👉🏼  
-[![View Live](https://img.shields.io/badge/Interactive_Card_Details_Form-pink?style=for-the-badge&logo=rocket)](https://enesiwise.github.io/Interactive-Card/)
+[![View Live](https://img.shields.io/badge/Interactive_Card-pink?style=for-the-badge&logo=rocket)](https://wise-interactive-card.netlify.app/)
 
 ---
 
