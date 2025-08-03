@@ -26,6 +26,13 @@ Users should be able to:
 
 ---
 
+## 🚀 Live Demo
+
+Click to view the live site 👉🏼  
+[![View Live](https://img.shields.io/badge/Interactive_Card_Details_Form-pink?style=for-the-badge&logo=rocket)](https://enesiwise.github.io/Interactive-Card/)
+
+---
+
 ## 🖼️SCREENSHOTS
 
 ### 💻 Desktop View
@@ -39,13 +46,6 @@ Users should be able to:
 ![Card Back](./Screenshots/Mobile-View-1.JPG)
 
 ![Success](./Screenshots/Mobile-View-2.JPG)
-
----
-
-## 🚀 Live Demo
-
-Click to view the live site 👉🏼  
-[![View Live](https://img.shields.io/badge/Interactive_Card_Details_Form-pink?style=for-the-badge&logo=rocket)](https://enesiwise.github.io/Interactive-Card/)
 
 ---
 
