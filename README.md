@@ -65,7 +65,7 @@ Click to view the live site 👉🏼 [![View Live](https://img.shields.io/badge/
 - [Tailwind CSS](https://tailwindcss.com/)
 - [React Router DOM](https://reactrouter.com/)
 - [Radix UI](https://www.radix-ui.com/) for accessible UI components
-- [gh-pages](https://www.npmjs.com/package/gh-pages) for deployment
+- [Netlify](https://www.netlify.com/) for deployment
 
 ---
 
