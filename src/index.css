@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Interactive Card Details Form Design System */
+
+@layer base {
+  :root {
+    /* Main background - dark purple gradient */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 100%;
+
+    /* Card backgrounds */
+    --card-bg: 0 0% 100%;
+    --card-foreground: 278 68% 11%;
+
+    /* Credit card gradient colors - matching the reference exactly */
+    --card-gradient-start: 246 80% 60%; /* Blue-purple */
+    --card-gradient-end: 317 87% 65%; /* Pink-coral */
+    --card-accent: 0 100% 66%; /* Coral accent */
+
+    /* Form colors */
+    --form-background: 0 0% 100%;
+    --form-foreground: 278 68% 11%;
+
+    /* Input fields */
+    --input-bg: 0 0% 100%;
+    --input-border: 270 3% 87%;
+    /* --input-border-focus: 246 80% 60%; */
+    --input-border-focus: hsl(249, 99%, 64%) - hsl(278, 94%, 30%);
+    --input-text: 278 68% 11%;
+    --input-placeholder: 279 6% 55%;
+
+    /* Primary button (Confirm) - dark purple */
+    --primary: 278 68% 11%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 278 68% 8%;
+
+    /* Error states */
+    --error: 0 100% 66%; /* Red 400 */
+    --error-foreground: 0 0% 100%;
+    
+    /* Gray colors */
+    --gray-400: 212 12% 71%;
+
+    /* Success states */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    /* Decorative elements */
+    --decoration-light: 0 100% 66%;
+    --decoration-accent: 246 80% 60%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--input-border));
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+}
+.input-gradient-border {
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%)) border-box;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.input-gradient-border:focus {
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%)) border-box;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Error input states */
+.input-error-focused {
+  border: 2px solid hsl(var(--error)) !important;
+  border-radius: 8px;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.input-error-blurred {
+  border: 1px solid hsl(var(--error)) !important;
+  border-radius: 8px;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Toast positioning */
+[data-sonner-toaster][data-theme] {
+  position: fixed !important;
+  top: 1rem !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  z-index: 9999 !important;
+}
+
+/* Position the main toast system at top center */
+[data-radix-toast-viewport] {
+  position: fixed !important;
+  top: 1rem !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  right: auto !important;
+  bottom: auto !important;
+  z-index: 9999 !important;
+}
