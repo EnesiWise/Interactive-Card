@@ -56,7 +56,7 @@ const Index = () => {
         <div className="hidden lg:flex justify-center items-center min-h-screen">
           <div className="relative flex w-full max-w-7xl px-8">
             {/* Credit card*/}
-            <div className="absolute left-1/3 -translate-x-1/2 top-1/2 -translate-y-1/2">
+            <div className="absolute left-1/3 -translate-x-[70%] top-1/2 -translate-y-1/2">
               <CreditCard
                 cardNumber={formData.cardNumber}
                 cardHolder={formData.cardHolder}
